@@ -13,7 +13,7 @@ const forecast = (longitude, latitude, callback) => {
       callback(
         undefined,
         `${body.current.weather_descriptions[0]}. 
-        It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} | The current precipitation is : ${body.current.precip} and the humidity is : ${body.current.humidity} with ${body.current.cloudcover}% cloud cover`
+        It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} | The current precipitation is : ${body.current.precip} and the humidity is : ${body.current.humidity}% with ${body.current.cloudcover}% cloud cover`
       );
     }
   });
